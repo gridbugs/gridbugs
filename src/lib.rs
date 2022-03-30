@@ -45,7 +45,10 @@ pub use chargrid_web;
 
 #[cfg(feature = "general_storage_static")]
 pub mod storage {
-    use general_storage_static;
+    #[cfg(feature = "storage_backend_web")]
+    pub use general_storage_static::backend::LocalStorage;
+    #[cfg(feature = "storage_backend_file")]
+    pub use general_storage_static::backend::{FileStorage, IfDirectoryMissing};
     pub use general_storage_static::{
         format, LoadError, LoadRawError, RemoveError, StaticStorage as Storage, StoreError,
         StoreRawError, StringError,
@@ -54,7 +57,10 @@ pub mod storage {
 
 #[cfg(feature = "general_audio_static")]
 pub mod audio {
-    use general_audio_static;
+    #[cfg(feature = "audio_backend_web")]
+    pub use general_audio_static::backend::WebAudioPlayer;
+    #[cfg(feature = "audio_backend_native")]
+    pub use general_audio_static::backend::{Error as NativeAudioError, NativeAudioPlayer};
     pub use general_audio_static::{
         StaticAudioPlayer as AudioPlayer, StaticHandle as AudioHandle, StaticSound as Audio,
     };

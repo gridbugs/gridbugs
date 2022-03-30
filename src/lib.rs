@@ -46,7 +46,10 @@ pub use chargrid_web;
 #[cfg(feature = "general_storage_static")]
 pub mod storage {
     use general_storage_static;
-    pub use general_storage_static::{format, StaticStorage as Storage};
+    pub use general_storage_static::{
+        format, LoadError, LoadRawError, RemoveError, StaticStorage as Storage, StoreError,
+        StoreRawError, StringError,
+    };
 }
 
 #[cfg(feature = "general_audio_static")]

@@ -1,7 +1,7 @@
 [package]
 name = "gridbugs"
 description = "Collection of re-exported crates for building roguelike games"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Stephen Sherratt <stephen@sherra.tt>"]
 license = "MIT"

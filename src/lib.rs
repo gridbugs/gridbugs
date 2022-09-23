@@ -25,6 +25,9 @@ pub use spatial_table;
 #[cfg(feature = "shadowcast")]
 pub use shadowcast;
 
+#[cfg(feature = "visible_area_detection")]
+pub use visible_area_detection;
+
 #[cfg(feature = "grid_search_cardinal")]
 pub use grid_search_cardinal;
 

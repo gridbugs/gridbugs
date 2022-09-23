@@ -1,7 +1,7 @@
 [package]
 name = "gridbugs"
 description = "Collection of re-exported crates for building roguelike games"
-version = "0.3.0"
+version = "0.3.1"
 edition = "2021"
 authors = ["Stephen Sherratt <stephen@sherra.tt>"]
 license = "MIT"
@@ -21,6 +21,7 @@ entity_table_serialize = [ "entity_table/serialize" ]
 entity_table_realtime_serialize = [ "entity_table_realtime/serialize" ]
 spatial_table_serialize = [ "spatial_table/serialize" ]
 shadowcast_serialize = [ "shadowcast/serialize" ]
+visible_area_detection_serialize = [ "visible_area_detection/serialize" ]
 grid_search_cardinal_serialize = [ "grid_search_cardinal/serialize" ]
 chargrid_serialize = [ "chargrid/serialize" ]
 chargrid_wgpu_serialize = [ "chargrid_wgpu/serialize" ]
@@ -47,6 +48,7 @@ backend = [
     "entity_table_realtime",
     "spatial_table",
     "shadowcast",
+    "visible_area_detection",
     "grid_search_cardinal",
 ]
 backend_serialize = [
@@ -59,6 +61,7 @@ backend_serialize = [
     "entity_table_realtime_serialize",
     "spatial_table_serialize",
     "shadowcast_serialize",
+    "visible_area_detection_serialize",
     "grid_search_cardinal_serialize",
 ]
 
@@ -90,6 +93,7 @@ entity_table = { version = "0.2", optional = true }
 entity_table_realtime = { version = "0.1", optional = true }
 spatial_table = { version = "0.4", optional = true }
 shadowcast = { version = "0.8", optional = true }
+visible_area_detection = { version = "0.1", optional = true }
 grid_search_cardinal = { version = "0.3", optional = true }
 chargrid = { version = "0.7", optional = true }
 chargrid_wgpu = { version = "0.2", optional = true }

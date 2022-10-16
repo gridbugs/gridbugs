@@ -1,7 +1,7 @@
 [package]
 name = "gridbugs"
 description = "Collection of re-exported crates for building roguelike games"
-version = "0.4.0"
+version = "0.5.0"
 edition = "2021"
 authors = ["Stephen Sherratt <stephen@sherra.tt>"]
 license = "MIT"
@@ -91,7 +91,7 @@ line_2d = { version = "0.5", optional = true }
 direction = { version = "0.18", optional = true }
 rgb_int = { version = "0.1", optional = true }
 entity_table = { version = "0.2", optional = true }
-entity_table_realtime = { version = "0.1", optional = true }
+entity_table_realtime = { version = "0.2", optional = true }
 spatial_table = { version = "0.4", optional = true }
 shadowcast = { version = "0.8", optional = true }
 visible_area_detection = { version = "0.2", optional = true }

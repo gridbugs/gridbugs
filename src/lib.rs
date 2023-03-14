@@ -40,6 +40,9 @@ pub use chargrid;
 #[cfg(feature = "chargrid_wgpu")]
 pub use chargrid_wgpu;
 
+#[cfg(feature = "chargrid_sdl2")]
+pub use chargrid_sdl2;
+
 #[cfg(feature = "chargrid_ggez")]
 pub use chargrid_ggez;
 

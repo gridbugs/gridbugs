@@ -99,7 +99,7 @@ shadowcast = { version = "0.8", optional = true }
 visible_area_detection = { version = "0.2", optional = true }
 grid_search_cardinal = { version = "0.3", optional = true }
 chargrid = { version = "0.10", optional = true }
-chargrid_wgpu = { version = "0.3", optional = true }
+chargrid_wgpu = { version = "0.4", optional = true }
 chargrid_ggez = { version = "0.3", optional = true }
 chargrid_sdl2 = { version = "0.2", optional = true }
 chargrid_ansi_terminal = { version = "0.4", optional = true }

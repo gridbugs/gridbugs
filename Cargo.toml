@@ -101,7 +101,7 @@ grid_search_cardinal = { version = "0.3", optional = true }
 chargrid = { version = "0.10", optional = true }
 chargrid_wgpu = { version = "0.3", optional = true }
 chargrid_ggez = { version = "0.3", optional = true }
-chargrid_sdl2 = { version = "0.2", optional = true }
+chargrid_sdl2 = { version = "0.3", optional = true }
 chargrid_ansi_terminal = { version = "0.4", optional = true }
 chargrid_web = { version = "0.4", optional = true }
 general_storage_static = { version = "0.3", optional = true }
